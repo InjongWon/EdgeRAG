@@ -1,4 +1,4 @@
-# AlphaRAG 📊
+# AlphaRAG 
 
 **Production RAG for Financial Intelligence**
 
@@ -9,7 +9,7 @@ A high-performance Retrieval-Augmented Generation (RAG) system designed for fina
 
 ---
 
-## 🎯 Key Features
+##Features
 
 - **High-Performance Retrieval**: Sub-200ms P95 latency with semantic caching and query optimization
 - **Hybrid Search**: Combines dense vector search with sparse BM25 for superior recall
@@ -20,7 +20,7 @@ A high-performance Retrieval-Augmented Generation (RAG) system designed for fina
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐
@@ -57,7 +57,7 @@ See [docs/architecture.md](docs/architecture.md) for detailed system design.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -107,7 +107,7 @@ Visit `http://localhost:8501` to access the application.
 
 ---
 
-## 📊 Performance Benchmarks
+##Performance Benchmarks
 
 | Metric | Without Optimization | With Optimization | Improvement |
 |--------|---------------------|-------------------|-------------|
@@ -122,7 +122,7 @@ See [benchmarks/](benchmarks/) for detailed performance analysis.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 alpharag/
@@ -146,7 +146,7 @@ See individual README files in each directory for detailed documentation.
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 Key configuration options in `config/config.yaml`:
 
@@ -177,7 +177,7 @@ optimization:
 
 ---
 
-## 📚 Usage Examples
+## Usage Examples
 
 ### Basic Query
 ```python
@@ -220,7 +220,7 @@ See [docs/usage.md](docs/usage.md) for comprehensive examples.
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -238,7 +238,7 @@ python benchmarks/run_benchmarks.py
 
 ---
 
-## 📈 Evaluation
+## Evaluation
 
 The system includes comprehensive evaluation metrics:
 
@@ -254,7 +254,7 @@ python src/evaluation/run_eval.py --eval-set data/eval/financial_qa.json
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ```bash
 # Build images
@@ -278,7 +278,7 @@ Services:
 
 ---
 
-## 🛣️ Roadmap
+## Roadmap
 
 - [x] Core RAG pipeline
 - [x] Hybrid search implementation
@@ -292,7 +292,7 @@ Services:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -304,13 +304,13 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [LangChain](https://github.com/langchain-ai/langchain) and [LlamaIndex](https://github.com/run-llama/llama_index)
 - Powered by [OpenAI](https://openai.com) and [Sentence Transformers](https://www.sbert.net/)
@@ -318,7 +318,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Brian Won** - [injongwbrian@gmail.com](mailto:injongwbrian@gmail.com)
 
@@ -328,10 +328,9 @@ Portfolio: [brianwon.dev](https://brianwon.dev)
 
 ---
 
-## 📊 Project Stats
+## Project Stats
 
-- **Lines of Code**: ~5,000
 - **Test Coverage**: 85%
-- **Documentation**: 100% of public APIs
-- **Performance Tests**: 50+ scenarios
-- **Sample Documents**: 50+ financial filings
+- **Documentation**: private APIs
+- **Performance Tests**: 25+ scenarios
+- **Sample Documents**: 35+ financial filings
