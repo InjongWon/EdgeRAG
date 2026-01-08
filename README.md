@@ -69,7 +69,7 @@ See [docs/architecture.md](docs/architecture.md) for detailed system design.
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/alpharag.git
+git clone https://github.com/injongwon/alpharag.git
 cd alpharag
 ```
 
