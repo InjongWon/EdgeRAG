@@ -322,7 +322,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 Project Link: [https://github.com/injongwon/alpharag](https://github.com/injongwon/alpharag)
 
-Portfolio: [brianwon.dev](https://brianwon.dev)
+
 
 ---
 
