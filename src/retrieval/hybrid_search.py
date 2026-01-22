@@ -11,9 +11,9 @@ class HybridSearch:
                 print("Connecting to Docker Qdrant...")
                 self.qdrant = QdrantClient(host="localhost", port=6333)
                 self.qdrant.get_collections()
-                print("✅ Connected to Docker")
+                print(" Connected to Docker")
             except Exception as e:
-                print(f"⚠️ Docker failed: {e}")
+                print(f" Docker failed: {e}")
                 print("Using in-memory mode...")
                 self.qdrant = QdrantClient(":memory:")
         else:
@@ -51,7 +51,7 @@ class HybridSearch:
         self.bm25 = BM25Okapi(tokenized)
         self.documents = texts
         
-        print(f"✅ Indexed {len(chunks)} chunks")
+        print(f" Indexed {len(chunks)} chunks")
     
     def search(self, query, top_k=10, alpha=0.7):
         # Dense search
