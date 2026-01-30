@@ -53,8 +53,6 @@ A high-performance Retrieval-Augmented Generation (RAG) system designed for fina
 └──────────────────────────────────────────────┘
 ```
 
-See [docs/architecture.md](docs/architecture.md) for detailed system design.
-
 ---
 
 ## Quick Start
