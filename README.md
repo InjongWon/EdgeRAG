@@ -1,4 +1,4 @@
-# AlphaRAG 
+# Edge RAG
 
 **Production RAG for Financial Intelligence**
 
