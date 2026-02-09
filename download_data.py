@@ -4,12 +4,11 @@ download_data.py - Create sample financial document for testing
 """
 
 from pathlib import Path
-
 # Create data directory
 Path("data").mkdir(exist_ok=True)
-
 # Create a sample test document
 sample_doc = """
+
 TESLA, INC.
 FORM 10-K
 ANNUAL REPORT
@@ -30,15 +29,10 @@ Our business is subject to numerous risks. Key risks include:
 
 4. Technology Risks: Our Full Self-Driving technology is still under development. 
    Delays or technical challenges could impact customer adoption.
-
 FINANCIAL PERFORMANCE
-
 Revenue: Total revenues increased to $96.7 billion in 2023, up from $81.5 billion in 2022.
-
 Operating Income: Operating income was $8.9 billion, representing a 9.2% operating margin.
-
 Cash Position: We ended 2023 with $29.1 billion in cash and cash equivalents.
-
 BUSINESS STRATEGY
 
 Our strategy focuses on:
@@ -51,7 +45,6 @@ Our strategy focuses on:
 
 with open("data/SAMPLE_TSLA_10K.txt", "w") as f:
     f.write(sample_doc)
-
 print("Created sample document: data/SAMPLE_TSLA_10K.txt")
 print("Use this to test your pipeline")
 print()
