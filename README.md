@@ -120,27 +120,6 @@ See [benchmarks/](benchmarks/) for detailed performance analysis.
 
 ---
 
-## Project Structure
-
-```
-alpharag/
-├── src/                      # Source code
-│   ├── ingestion/           # Document processing pipeline
-│   ├── retrieval/           # RAG & search components
-│   ├── optimization/        # Caching & performance
-│   ├── evaluation/          # Metrics & testing
-│   └── utils/               # Shared utilities
-├── frontend/                # Streamlit UI
-├── data/                    # Sample documents & datasets
-├── tests/                   # Unit & integration tests
-├── benchmarks/              # Performance benchmarks
-├── docs/                    # Documentation
-├── scripts/                 # Utility scripts
-├── docker/                  # Docker configurations
-└── config/                  # Configuration files
-```
-
-See individual README files in each directory for detailed documentation.
 
 ---
 
@@ -173,23 +152,7 @@ optimization:
   use_reranking: true
 ```
 
----
 
-## Usage Examples
-
-### Basic Query
-```python
-from src.retrieval.rag_pipeline import RAGPipeline
-
-pipeline = RAGPipeline()
-result = pipeline.query(
-    "What are the main risk factors in Tesla's 2024 10-K?"
-)
-
-print(result.answer)
-print(f"Sources: {result.sources}")
-print(f"Confidence: {result.confidence}")
-```
 
 ### Batch Processing
 ```python
@@ -252,41 +215,11 @@ python src/evaluation/run_eval.py --eval-set data/eval/financial_qa.json
 
 ---
 
-## Docker Deployment
-
-```bash
-# Build images
-docker-compose build
-
-# Start all services
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
-
 Services:
 - **Backend**: `localhost:8000`
 - **Frontend**: `localhost:8501`
 - **Redis**: `localhost:6379`
 - **Vector DB**: `localhost:6333`
-
----
-
-## Roadmap
-
-- [x] Core RAG pipeline
-- [x] Hybrid search implementation
-- [x] Semantic caching
-- [x] Performance benchmarks
-- [ ] Multi-modal support (charts, tables)
-- [ ] Fine-tuned reranker model
-- [ ] Streaming responses
-- [ ] Multi-tenant support
-- [ ] Advanced analytics dashboard
 
 ---
 
@@ -314,19 +247,5 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - Powered by [OpenAI](https://openai.com) and [Sentence Transformers](https://www.sbert.net/)
 - Inspired by production ML systems at leading financial institutions
 
----
-
-## Contact
-
-Project Link: [https://github.com/injongwon/alpharag](https://github.com/injongwon/alpharag)
-
-
-
----
-
-## Project Stats
-
-- **Test Coverage**: 85%
-- **Documentation**: private APIs
 - **Performance Tests**: 25+ scenarios
 - **Sample Documents**: 35+ financial filings
